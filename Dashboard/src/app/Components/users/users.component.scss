@@ -1,0 +1,159 @@
+.UsersWrapper {
+  height: 23em;
+  background-color: var(--Primery-White);
+  border-radius: 2px;
+  padding: 1em;
+  font-family: sans-serif;
+  color: var(--Primery-Text);
+
+  .Title {
+    h2 {
+      margin: 10px 0px;
+      font-weight: 100;
+      font-size: 20px;
+    }
+  }
+
+  .Users {
+    height: 19em;
+    overflow: auto;
+
+    .UsersRow {
+      border: 1px solid var(--Primery-LightGray);
+      height: 40px;
+      margin-bottom: 1em;
+      padding: 4px 0;
+      display: flex;
+
+      .UImg {
+        height: 95%;
+        width: 45px;
+        text-align: center;
+        margin: 0 10px 0 0;
+        position: relative;
+
+        img {
+          height: 100%;
+          border-radius: 50%;
+        }
+
+        .StatusIco {
+          position: absolute;
+          font-size: 10px;
+          bottom: 0;
+          right: 0px;
+          border-radius: 10px;
+          padding: 2px 2px 1px 2px;
+          background-color: var(--Primery-White);
+
+          &.PrBlue {
+            color: var(--Primery-Blue) !important;
+          }
+          &.PrGreen {
+            color: var(--Primery-Green) !important;
+          }
+        }
+      }
+
+      .UDetail {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 29%;
+        margin-right: 10px;
+
+        .UserName {
+          font-size: 14px;
+        }
+
+        .UserPlace {
+          font-size: 11px;
+          color: var(--Primery-LightGray);
+        }
+      }
+
+      .UProgress {
+        width: 35%;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+
+        .progress {
+          border-radius: 10px;
+          height: 5px;
+          background-color: red;
+        }
+
+        .CounterText {
+          font-size: 12px;
+          margin-left: 5px;
+        }
+
+        &.PrBlue {
+          .progress {
+            background-color: var(--Primery-Blue) !important;
+          }
+          .CounterText {
+            color: var(--Primery-Blue) !important;
+          }
+        }
+        &.PrGreen {
+          .progress {
+            background-color: var(--Primery-Green) !important;
+          }
+          .CounterText {
+            color: var(--Primery-Green) !important;
+          }
+        }
+        &.PrYellow {
+          .progress {
+            background-color: var(--Primery-Yellow) !important;
+          }
+          .CounterText {
+            color: var(--Primery-Yellow) !important;
+          }
+        }
+        &.PrLightBlack {
+          .progress {
+            background-color: var(--Primery-LightBlack) !important;
+          }
+          .CounterText {
+            color: var(--Primery-LightBlack) !important;
+          }
+        }
+        &.PrRed {
+          .progress {
+            background-color: var(--Primery-Red) !important;
+          }
+          .CounterText {
+            color: var(--Primery-Red) !important;
+          }
+        }
+      }
+
+      .UMore {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .moreBtn {
+          border-radius: 2px;
+          background-color: var(--Primery-LightGray);
+          color: var(--Primery-LightBrown);
+          border: none;
+          font-family: sans-serif;
+          height: 2em;
+          width: 53px;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+
+          &:hover,
+          &.Active {
+            background-color: var(--Primery-Blue);
+            color: var(--Primery-White);
+          }
+        }
+      }
+    }
+  }
+}

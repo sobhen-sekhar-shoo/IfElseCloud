@@ -1,0 +1,90 @@
+.OrderTableWrapper {
+  height: 23em;
+  background-color: var(--Primery-White);
+  border-radius: 2px;
+  padding: 1em;
+  font-family: sans-serif;
+  color: var(--Primery-Text);
+
+  .Title {
+    h2 {
+      margin: 10px 0px;
+      font-weight: 100;
+      font-size: 20px;
+    }
+  }
+
+  .Table {
+    height: 19em;
+    overflow: auto;
+
+    table#OrderTbl {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: left;
+      font-size: 12px;
+
+      th {
+        border-bottom: 1px solid var(--Primery-LightGray);
+        border-top: 1px solid var(--Primery-LightGray);
+        padding: 10px 0;
+
+        &:first-child {
+          width: 30px;
+        }
+
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          text-align: center;
+        }
+      }
+
+      .StatusInfoTd {
+        padding: 0 !important;
+      }
+
+      td {
+        border-bottom: 1px solid var(--Primery-LightGray);
+        padding: 10px 0;
+
+        .RemoveIco {
+          color: var(--Primery-Red);
+          cursor: pointer;
+        }
+
+        .StatusInfo {
+          text-align: center;
+          height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2px;
+        }
+
+        .Paid {
+          background-color: var(--Primery-Green);
+          color: var(--Primery-White);
+        }
+
+        .Pending {
+          background-color: var(--Primery-LightBrown);
+          color: var(--Primery-White);
+        }
+
+        .Failed {
+          background-color: var(--Primery-Red);
+          color: var(--Primery-White);
+        }
+
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

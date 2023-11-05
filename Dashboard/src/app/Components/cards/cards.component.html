@@ -1,0 +1,14 @@
+<div class="CardWrapper">
+    <div class="card card_{{i}}" [ngClass]=" i == 0 ? 'Active' : '' " 
+     *ngFor="let item Of CardsDt; index as i;">
+        <div class="leftpart">
+            <label class="PercentCount">{{'0.' + item.value | percent}}</label><br/>
+            <div class="devider"></div>
+            <label class="CardTypeText"> {{item.header}}</label><br/>
+            <label class="CardTypeDetel"> {{item.sub_header}}</label>
+        </div>
+        <div class="rightpart">
+            <fa-icon [icon]="UsersClass[i]" ></fa-icon>
+        </div>
+    </div>
+</div>

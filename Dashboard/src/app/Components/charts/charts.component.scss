@@ -1,0 +1,32 @@
+.ChartWrapper {
+  display: flex;
+  height: 20em;
+  padding: 1em;
+  font-family: sans-serif;
+
+  .LineChart {
+    width: 35%;
+    margin-right: 3%;
+    background-color: var(--Primery-White);
+    padding: 15px;
+  }
+  .BarChart {
+    width: 35%;
+    margin-right: 3%;
+    background-color: var(--Primery-White);
+    padding: 15px;
+  }
+  .Doughnut {
+    width: 26%;
+    background-color: var(--Primery-White);
+    padding: 15px;
+  }
+
+  .Title {
+    h2 {
+      margin: 10px 0px;
+      font-weight: 100;
+      font-size: 20px;
+    }
+  }
+}

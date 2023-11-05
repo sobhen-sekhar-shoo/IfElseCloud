@@ -1,0 +1,37 @@
+<div class="OrderTableWrapper">
+    <div class="Title">
+        <h2>Recent Order</h2>
+    </div>
+    <div class="Table">
+        <table id="OrderTbl">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Product</th>
+                    <th>Delivery Date</th>
+                    <th>Status</th>
+                    <th>Tracking No</th>
+                    <th>Shipping</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of TblDt; index as i">
+                    <td>{{i + 1}}</td>
+                    <td>{{item.name}}</td>
+                    <td>{{item.product}}</td>
+                    <td>{{item.delivery_date}}</td>
+                    <td class="StatusInfoTd">
+                        <div class="StatusInfo" [ngClass]="item.status == 'Paid'? 'Paid' :
+                         item.status == 'Failed'? 'Failed' :
+                         item.status == 'Pending'? 'Pending' : '' ">{{item.status}}</div>
+                    </td>
+                    <td>{{item.tracking_no}}</td>
+                    <td>{{item.shipping}}</td>
+                    <td><fa-icon class="RemoveIco" [icon]="RemoveIco"></fa-icon></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

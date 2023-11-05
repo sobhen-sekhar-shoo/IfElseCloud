@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ContentBody {
+  // height: 100vh;
+  width: 100%;
+  background-color: var(--Background-color);
+
+  .ContentWrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    .MainContent {
+      display: block;
+      width: 100%;
+
+      .TopNavBar {
+        height: 4rem;
+        width: 100%;
+        background-color: var(--Primery-White);
+      }
+
+      .PageBody {
+        height: 88%;
+        margin: 2em 2em;
+
+        .MidSec {
+          display: flex;
+          margin-bottom: 1em;
+
+          .OrderTable {
+            width: 62%;
+            margin-right: 3%;
+          }
+
+          .Users {
+            width: 35%;
+          }
+        }
+      }
+    }
+  }
+}

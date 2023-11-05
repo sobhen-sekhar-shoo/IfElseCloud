@@ -1,0 +1,63 @@
+.CardWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  .card {
+    height: 7em;
+    width: 20%;
+    background-color: var(--Primery-White);
+    display: flex;
+    flex-direction: row;
+    padding: 1em;
+    border-radius: 2px;;
+
+    .leftpart {
+      width: 80%;
+      font-family: sans-serif;
+
+      .PercentCount {
+        font-size: 3em;
+        font-family: sans-serif;     
+        color: var(--Primery-Blue);
+      }
+
+      .devider {
+        margin: 10px 0;
+      }
+
+      .CardTypeText {
+        font-size: 16px;
+        color: var(--Primery-Text);
+      }
+
+      .CardTypeDetel {
+        font-size: 11px;
+        color: var(--Primery-LightGray);
+      }
+    }
+
+    .rightpart {
+      width: 20%;
+      text-align: center;
+
+      fa-icon {
+        color: var(--Primery-LightGray);
+        font-size: 40px;
+      }
+    }
+
+    &.Active {
+      background-color: var(--Primery-Blue);
+
+      
+        .PercentCount {
+            color: var(--Primery-White) !important;
+        }
+
+        .CardTypeText {
+            color: var(--Primery-White) !important;
+          }
+    }
+  }
+}

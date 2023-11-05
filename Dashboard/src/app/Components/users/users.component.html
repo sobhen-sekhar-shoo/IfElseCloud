@@ -1,0 +1,28 @@
+<div class="UsersWrapper">
+    <div class="Title">
+        <h2>New User Registrations</h2>
+    </div>
+    <div class="Users">
+        <div class="UsersRow" *ngFor="let User of UsersDt; index as i">
+            <div class="UImg">
+                <img src="{{User.picture}}" alt="" srcset="">
+                <fa-icon class="StatusIco" [icon]="faCircle" 
+                [ngClass]="User.isActive ? 'PrGreen' : 'PrBlue'"></fa-icon>
+            </div>
+            <div class="UDetail">
+                <label class="UserName">{{User.name}}</label>
+                <label class="UserPlace">{{User.country}}</label>
+            </div>
+            <div class="UProgress" [ngClass]="UsersClass[{} | random : 0 : 4]">
+                <!-- <progress class="progress" [ngStyle]="{'width': '0.' + User.progress | percent}" value="100" max="100"> {{'0.' + User.progress | percent}}</progress> -->
+                <!-- <div class="ProWrapper"> -->
+                    <div class="progress" [ngStyle]="{'width': '0.' + User.progress | percent}"></div>
+                <!-- </div> -->
+                <span class="CounterText">{{'0.' + User.progress | percent}}</span>
+            </div>
+            <div class="UMore">
+                <button class="moreBtn" [ngClass]="i == 0 ? 'Active' : '' ">More</button>
+            </div>
+        </div>
+    </div>
+</div>

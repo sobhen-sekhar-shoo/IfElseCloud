@@ -1,0 +1,114 @@
+.TnContents {
+  display: flex;
+  height: 100%;
+  padding: 0 2rem;
+  justify-content: space-between;
+
+  .searchbar {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    fa-icon {
+      color: var(--Primery-LightGray);
+    }
+
+    #TnSearchInput {
+      height: 2rem;
+      width: 100%;
+      margin-left: 1rem;
+      border: none;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: var(--Primery-LightGray);
+        opacity: 1; /* Firefox */
+      }
+
+      &::-ms-input-placeholder {
+        /* Edge 12-18 */
+        color: var(--Primery-LightGray);
+      }
+    }
+  }
+
+  .rightsec {
+    display: flex;
+  }
+
+  .Langbar,
+  .Messagebar,
+  .Notificationbar,
+  .ProfileBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+  }
+
+  button.LanBtn {
+    background-color: transparent;
+    border: none;
+    color: var(--Primery-Text);
+    font-family: sans-serif;
+
+    fa-icon {
+      margin: 0 5px;
+      color: var(--Primery-LightGray);
+    }
+  }
+
+  .LiveNotification {
+    position: relative;
+
+    .NFIcon {
+      color: var(--Primery-LightGray);
+    }
+
+    .Ndot {
+      color: var(--Primery-Green);
+      position: absolute;
+      font-size: 4px;
+      right: -5px;
+      top: -3px;
+    }
+  }
+
+  .LiveBell {
+    position: relative;
+
+    .BIcon {
+      color: var(--Primery-LightGray);
+    }
+
+    .Bdot {
+      color: var(--Primery-Red);
+      position: absolute;
+      font-size: 4px;
+      right: -5px;
+      top: -3px;
+    }
+  }
+
+  .ProfileBar {
+    width: 15em;
+    .ProfImg {
+      height: 2em;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+    .userName{
+        color: var(--Primery-Text);
+        font-family: sans-serif;
+        font-size: 13px;
+        margin: 0 1em;;
+    }
+    fa-icon{
+        color: var(--Primery-LightGray);
+    }
+  }
+}

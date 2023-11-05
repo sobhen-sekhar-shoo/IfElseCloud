@@ -1,0 +1,42 @@
+.LmWrapper {
+  background-color: var(--Primery-White);
+  width: fit-content;
+  height: 100vh;
+
+  .TopSec {
+    height: 4em;
+    width: 4em;
+    background-color: var(--Primery-Blue);
+
+    .toggleBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      cursor: pointer;
+
+      fa-icon {
+        color: var(--Primery-White);
+      }
+    }
+  }
+
+  .NavSec {
+    padding: 1rem 0 0 0;
+
+    .NavContent {
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--Primery-LightGray);
+      transition: 0.3s ease-in-out;
+      cursor: pointer;
+      margin: 5px 0;
+
+      &:hover, &.Active {
+        color: var(--Primery-Active);
+      }
+    }
+  }
+}
